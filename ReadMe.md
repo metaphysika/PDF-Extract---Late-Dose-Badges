@@ -18,21 +18,21 @@ pip install pdfplumber pandas
 
 ## Usage
 
-1. Place all PDF files from which you want to extract data into a single directory.
-2. Update the folder_path variable in the script with the path to the directory containing your PDF files.
-3. Ensure that the Excel file you want to append data to exists and update the excel_path variable with the correct file path.
-4. Run the script in your Python environment.
+    1. Place all PDF files from which you want to extract data into a single directory.
+    2. Update the folder_path variable in the script with the path to the directory containing your PDF files.
+    3. Ensure that the Excel file you want to append data to exists and update the excel_path variable with the correct file path.
+    4. Run the script in your Python environment.
 
 ## How It Works
 
-- The script iterates over each PDF file in the specified directory.
-- Using pdfplumber, it extracts text from each page of the PDF and checks for the string "Unreturned Dosimeters".
-- If the string is found, it applies a regular expression pattern to find matches of specific invoice data.
-- Each found match is added to a list of all records.
-- The list of all records is converted into a pandas DataFrame with appropriate column headers.
-- Finally, the script checks if the specified Excel file exists:
-    - If it does, it appends the data to the existing file without adding header rows.
-    - If it does not exist, it creates a new Excel file and writes the DataFrame with headers.
+    - The script iterates over each PDF file in the specified directory.
+    - Using pdfplumber, it extracts text from each page of the PDF and checks for the string "Unreturned Dosimeters".
+    - If the string is found, it applies a regular expression pattern to find matches of specific invoice data.
+    - Each found match is added to a list of all records.
+    - The list of all records is converted into a pandas DataFrame with appropriate column headers.
+    - Finally, the script checks if the specified Excel file exists:
+        - If it does, it appends the data to the existing file without adding header rows.
+        - If it does not exist, it creates a new Excel file and writes the DataFrame with headers.
 
 ## Output
 
