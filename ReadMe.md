@@ -44,6 +44,12 @@ Notes
     - If your Excel workbook has a different sheet name, update the writer.sheets['Sheet1'] reference to match your sheet name.
     - The script does not handle merged cells in the Excel file.
 
+## Reports
+
+Here is an exmple of a dashboard created in PowerBI from the extracted data. Here I was trying to determine what deparments had the highest instances of not turning in radiation dose badges and the costs associated.
+
+![Late Badge Dashboard](LateBadgesDashboard.png)
+
 ## Disclaimer
 
 This script is provided "as is", without warranty of any kind. Use it at your own risk.
